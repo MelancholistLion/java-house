@@ -12,7 +12,7 @@ public class Street {
         this.houses = houses;
     }
     public void addHouse(int number, House house) {
-        if(houses.isEmpty() && houses.size() <= number) {
+        if(houses.isEmpty() || houses.size() <= number) {
             houses.add(house);
         } else {
             House indexHouse = houses.get(number);
